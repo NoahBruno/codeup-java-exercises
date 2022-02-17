@@ -5,7 +5,7 @@ public class ConsoleExercises {
         //1--------------------------------------------------------
 
         double pi = 3.14159;
-        System.out.printf("The value of pi is approximately %s", pi);
+        System.out.format("The value of pi is approximately %.2f%n", pi);
 
         //2--------------------------------------------------------
 
@@ -47,14 +47,13 @@ public class ConsoleExercises {
 //        System.out.println("Here is the Area: " + length * width);
 //        System.out.println("Here is the Perimeter: " + ((length * 2) + (width * 2)) );
 
-//        Scanner newScan = new Scanner (System.in);
-//
-//        System.out.print("\nEnter length and height:");
-//        String length = newScan.parseInt();
-//        String width = newScan.parseInt();
-//
-//        System.out.println("Here is the Area: " + length * width);
-//        System.out.println("Here is the Perimeter: " + ((length * 2) + (width * 2)) );
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("\nWhat is the length of the classroom?");
+        String width = scanner.next();
+        System.out.println("What is the width of the classroom?");
+        String length = scanner.next();
+        System.out.println("The area of the room is: " + Integer.parseInt(width) * Integer.parseInt(length) + "ft");
+        System.out.println("The perimeter of the room is: " + 2*Integer.parseInt(width)+ 2*Integer.parseInt(length) + "ft");
 
     }
 }
