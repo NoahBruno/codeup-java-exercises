@@ -20,7 +20,9 @@ public class Person {
         System.out.println("hi, " + name);
     }
 
+
     public static void main(String[] args) {
+
 //        Person rick = new Person();
 //        rick.name = "Rick";
 //        rick.sayHello();
