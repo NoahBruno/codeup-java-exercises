@@ -9,8 +9,8 @@ public class MethodsExercises {
 //        System.out.println(divide());
 //        System.out.println(modulus());
 //        pickNumber(11);
-        factorial();
-//        diceSides();
+//        factorial();
+        diceSides();
 //        guessMe();
 //        runGame();
     }
@@ -54,42 +54,42 @@ public class MethodsExercises {
 //        System.out.println("try again!");
 //        pickNumber(n);
 //}
-    public static void factorial(){
-        Scanner ask = new Scanner(System.in);
-        System.out.println("pick a number between 1 and 10");
-        long num = ask.nextInt();
-        if (num >= 1 && num <= 10) {
-            System.out.println(num);
-            Scanner again = new Scanner(System.in);
-            System.out.println("do you want to continue with this number?[y/n]");
-            String answer = again.nextLine();
-            if (answer.equalsIgnoreCase("y")){
-                long fact = 1;
-                for (long i = 2; i <= num; i++){
-                        fact = fact * i;
-                        System.out.println("1 factorial of " + i + " = " + fact);
-                    }
-                }else{System.out.println("shoulda said yes!");
-            }
-    }
-}
-//    public static void diceSides() {
-//        Scanner dice = new Scanner(System.in);
-//        System.out.println("How many sides are on these 2 dice?");
-//        int sides = dice.nextInt();
-//        Scanner yesNo = new Scanner (System.in);
-//        System.out.println("would you like to roll the dice?[y/n]");
-//        String answer = yesNo.nextLine();
-//        if (answer.equalsIgnoreCase("y")){
-//            Random rand = new Random();
-//            int rand_int1 = rand.nextInt(sides);
-//            int rand_int2 = rand.nextInt(sides);
-//            System.out.println(rand_int1);
-//            System.out.println(rand_int2);
-//        }else{
-//            System.out.println("yes was the correct answer.");
-//        }
+//    public static void factorial(){
+//        Scanner ask = new Scanner(System.in);
+//        System.out.println("pick a number between 1 and 10");
+//        long num = ask.nextInt();
+//        if (num >= 1 && num <= 10) {
+//            System.out.println(num);
+//            Scanner again = new Scanner(System.in);
+//            System.out.println("do you want to continue with this number?[y/n]");
+//            String answer = again.nextLine();
+//            if (answer.equalsIgnoreCase("y")){
+//                long fact = 1;
+//                for (long i = 2; i <= num; i++){
+//                        fact = fact * i;
+//                        System.out.println("1 factorial of " + i + " = " + fact);
+//                    }
+//                }else{System.out.println("shoulda said yes!");
+//            }
 //    }
+//}
+    public static void diceSides() {
+        Scanner dice = new Scanner(System.in);
+        System.out.println("How many sides are on these 2 dice?");
+        int sides = dice.nextInt();
+        Scanner yesNo = new Scanner (System.in);
+        System.out.println("would you like to roll the dice?[y/n]");
+        String answer = yesNo.nextLine();
+        if (answer.equalsIgnoreCase("y")){
+            Random rand = new Random();
+            int rand_int1 = rand.nextInt(sides);
+            int rand_int2 = rand.nextInt(sides);
+            System.out.println(rand_int1);
+            System.out.println(rand_int2);
+        }else{
+            System.out.println("yes was the correct answer.");
+        }
+    }
 //        public static void runGame() {
 //            String another = "";
 //            int answer, guess,attemptsNum = 0;
