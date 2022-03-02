@@ -11,7 +11,7 @@ public class ShapesTest {
         System.out.println("area: " + myShape.getArea());
         System.out.println("perimeter: " + myShape.getPerimeter());
 
-        myShape = new Square(5,5);
+        myShape = new Square(5);
         System.out.println("area: " + myShape.getArea());
         System.out.println("perimeter: " + myShape.getPerimeter());
 //        Rectangle box1 = new Rectangle(4,5);
