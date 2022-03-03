@@ -15,9 +15,11 @@ public class Square extends Quadrilateral{
     public double getPerimeter() {
         return 2 * this.length + this.width;
     }
-    public double getArea() {
+
+        public double getArea() {
         return this.length * this.width;
     }
+
 //    public Square(int side){
 //        super(side, side);
 //    }
