@@ -19,6 +19,7 @@ public class student {
     public String getName(){
         return name;
     }
+
     // adds the given grade to the grades property
     public void addGrade(int grade){
         this.grade.add(grade);
@@ -32,6 +33,10 @@ public class student {
         int avg = holder / grade.size();
         return avg;
 
+    }
+
+    public String toString(){
+        return name + "" + grade;
     }
 
 
