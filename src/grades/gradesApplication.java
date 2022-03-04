@@ -29,6 +29,9 @@ public class gradesApplication {
         students.put("TheG.O.A.T", noah);
         students.put("TrailerParkBilly", billy);
         students.put("PennyJenny", jenny);
-        System.out.println(students);
+        for (String key : students.keySet()) {
+            System.out.println("key: " + key + " value: " + students.get(key));
+        }
     }
+
 }
