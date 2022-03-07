@@ -2,6 +2,9 @@ package grades;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.HashMap;
+import java.util.Map;
+import java.util.TreeMap;
+import util.Input;
 
 public class gradesApplication {
     public static void main(String[] args) {
@@ -67,31 +70,30 @@ public class gradesApplication {
 //            confirm = userConfirm.equalsIgnoreCase("y");
 //
 //    }while(confirm);
-        ArrayList<String> category = new ArrayList<>();
-        category.add("fruit");
-        category.add("veggie");
-        category.add("meat");
-        category.add("drink");
-        category.add("cheese");
-
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("would you like to make a grocery list? [y/n]");
-        String answer = scanner.nextLine();
-        if (answer.equalsIgnoreCase("y")){
-            System.out.println("Choose a Category");
-            int i = 0;
-            for (String grocery : category){
-                ++i;
-                System.out.println(i + " " + grocery);
-                String numForCategory = scanner.nextLine();
-                if(numForCategory.equals("1")){
-
-                }
-            }
-        }else{
-            System.out.println("k");
-        }
-
+//        ArrayList<String> category = new ArrayList<>();
+//        category.add("fruit");
+//        category.add("veggie");
+//        category.add("meat");
+//        category.add("drink");
+//        category.add("cheese");
+//
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("would you like to make a grocery list? [y/n]");
+//        String answer = scanner.nextLine();
+//        if (answer.equalsIgnoreCase("y")){
+//            System.out.println("Choose a Category");
+//            int i = 0;
+//            for (String grocery : category){
+//                ++i;
+//                System.out.println(i + " " + grocery);
+//                String numForCategory = scanner.nextLine();
+//                if(numForCategory.equals("1")){
+//
+//                }
+//            }
+//        }else{
+//            System.out.println("k");
+//        }
     }
 
 }
