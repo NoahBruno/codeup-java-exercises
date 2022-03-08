@@ -20,7 +20,7 @@ public class groceryApp {
     }
         public static void main(String[] args) {
             boolean confirm;
-            Scanner input = new Scanner(System.in);
+            Input input = new Input();
 
             ArrayList<String> categories = new ArrayList<>();
             categories.add("1. Dairy");
@@ -48,49 +48,49 @@ public class groceryApp {
             while (confirm) {
                 System.out.println("Please enter a number for the category: ");
                 System.out.println(categories);
-                int userEntry = input.nextInt();  //input.getInt returns scanner.nextInt()
+                int userEntry = input.getInt();  //input.getInt returns scanner.nextInt()
                 do {
                     if (userEntry == 1) {
                         System.out.println("Enter your item for the category of Dairy: ");
-                        String userItemEntry = input.nextLine();
+                        String userItemEntry = input.getString();
                         System.out.println("Enter Quantity");
-                        int userQty = input.nextInt();
+                        int userQty = input.getInt();
                         dairyMap.put(userItemEntry,userQty);
                     } else if (userEntry == 2) {
                         System.out.println("Enter your item for the category of Produce: ");
-                        String userItemEntry = input.nextLine();
+                        String userItemEntry = input.getString();
                         System.out.println("Enter Quantity");
-                        int userQty = input.nextInt();
+                        int userQty = input.getInt();
                         produceMap.put(userItemEntry, userQty);
                     } else if (userEntry == 3) {
                         System.out.println("Enter your item for the category of Frozen: ");
-                        String userItemEntry = input.nextLine();
+                        String userItemEntry = input.getString();
                         System.out.println("Enter Quantity");
-                        int userQty = input.nextInt();
+                        int userQty = input.getInt();
                         frozenMap.put(userItemEntry, userQty);
                     } else if (userEntry == 4) {
                         System.out.println("Enter your item for the category of Bakery: ");
-                        String userItemEntry = input.nextLine();
+                        String userItemEntry = input.getString();
                         System.out.println("Enter Quantity");
-                        int userQty = input.nextInt();
+                        int userQty = input.getInt();
                         bakeryMap.put(userItemEntry, userQty);
                     } else if (userEntry == 5) {
                         System.out.println("Enter your item for the category of Deli: ");
-                        String userItemEntry = input.nextLine();
+                        String userItemEntry = input.getString();
                         System.out.println("Enter Quantity");
-                        int userQty = input.nextInt();
+                        int userQty = input.getInt();
                         deliMap.put(userItemEntry, userQty);
                     } else if (userEntry == 6) {
                         System.out.println("Enter your item for the category of Meat/Seafood: ");
-                        String userItemEntry = input.nextLine();
+                        String userItemEntry = input.getString();
                         System.out.println("Enter Quantity");
-                        int userQty = input.nextInt();
+                        int userQty = input.getInt();
                         meatSeafoodMap.put(userItemEntry, userQty);
                     } else if (userEntry == 7) {
                         System.out.println("Enter your item for the category of Other: ");
-                        String userItemEntry = input.nextLine();
+                        String userItemEntry = input.getString();
                         System.out.println("Enter Quantity");
-                        int userQty = input.nextInt();
+                        int userQty = input.getInt();
                         otherMap.put(userItemEntry, userQty);
                     } else {
                         System.out.println("Invalid response");
